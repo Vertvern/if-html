@@ -1,11 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My first page</title>
+  <meta charset="UTF-8">
+  <title>My first page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <h1>My First Page</h1>
-<p> &#128526 <a href="./about/"> "About author" </a> &#128526 </p>
+<p>
+  &#128526<a href="./about/">"About author"</a>&#128526
+</p>
+<hr>
+<h2> Желания и цели </h2>
+<p>Человек &#177; с <small>детства</small> изучает чему равно 2<sup>2</sup> или 2<sub>2</sub>, хотя многие
+  <del>как я</del>
+  не помнят это, но желание идти в ногу со временем, изучать что-то
+  <del> давно забытое старое</del>
+  &#171;новое&#187; и как-то изменить нынешнее положение вещей, потому что, как я считаю, если человек не меняется, то
+  он и не
+  развивается, а если нету прогресса, то есть деградация, а она ведет к застою и апатии, податливому образу мысли и
+  зависимости от тех или иных обстоятельств в жизни.&#128565; Лично я считаю, что IT вполне способна дать возможности
+  для этого и
+  расширить кругозор. В этом и есть моя цель&#8211;добиться успеха в изучении веб разработки и прохождении курса, а
+  также в
+  дальнейшем развитии личности и профессионализма.&#128522;
+</p>
+<h3>Ожидания</h3>
+<p>Ожидания в первую очередь от себя, что хватит сил и стремления, потому как то, что я наблюдаю по ходу курса уже
+  оправдывает их, лекций вполне достаточно, чтобы уяснить суть работы.&#128583;</p>
+<img style="width: 1400px; height: 600px"
+     src="./img/laaaand.jpg"
+     alt="Landscape"
+/>
+
+
+  <ol>
+    <li>Знакомство с Web</li>
+    <ul>
+      <li>Краткая история Web и что такое интернет.</li>
+      <ul>
+      </ul> <!-- почему без пустых тегов неправильно работает нумерация списка (или без css иначе никак?)? -->
+      <li>Как устроен браузер и как он получает страницы по сети.</li>
+      <li>Что такое Git?</li>
+      <li>Создание первого репозитория.</li>
+      <li>О файле .gitignore.</li>
+    </ul>
+    <li>HTML-верстка первые шаги</li>
+    <ul>
+      <li>Настройка рабочей среды.</li>
+      <li>Краткая история HTML.</li>
+      <ul>
+      </ul> <!--снова, без этой вставки нумерация сбивается -->
+      <li>Какие бывают теги и что такое атрибут.</li>
+      <li>Теги для работы с текстом.</li>
+      <li>Создание собственной страницы.</li>
+    </ul>
+    <li>Погружение в HTML-разметку</li>
+    <ul>
+      <li>Мета-теги.</li>
+      <li>Мнемоники.</li>
+      <li>Тег для работы с изображениями.</li>
+      <li>Теги для работы со списками.</li>
+      <li>Теги для работы с таблицами.</li>
+      <li>Теги для работы с формами.</li>
+      <li>Div-блоки.</li>
+    </ul>
+  </ol>
+  <p>
+  <table border="1" width="50%">
+
+  <tr>
+    <th>Tag</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>&lt;table></td> <!-- Можно ли вписать тег без вставки спецсимвола?-->
+    <td>Defines a table</td>
+  </tr>
+  <tr>
+    <td>&lt;tr></td>
+    <td>Defines a row in a table</td>
+  </tr>
+  <tr>
+    <td>&lt;th></td>
+    <td rowspan="2"> Defines a "header cell"/"cell" in a table</td>
+  </tr>
+  <tr>
+    <td>&lt;td></td>
+  </tr>
+  <tr>
+    <td colspan="2">Rarely used</td>
+  </tr>
+  <tr>
+    <td>&lt;caption></td>
+    <td>Defines a table caption</td>
+  </tr>
+  <tr>
+    <td>&lt;thead></td>
+    <td>Groups the header content in a tabele</td>
+  </tr>
+  <tr>
+    <td>&lt;tbody></td>
+    <td>Groups the body content in a tabele</td>
+  </tr>
+  <tr>
+    <td>&lt;tfoot></td>
+    <td>Groups the footer content in a tabel</td>
+  </tr>
+  </table>
+  <p>
+  <form action="/" method="get">
+    <fieldset>
+      <legend>My first form</legend>
+      <div>
+        <label for="name">Name</label>
+      </div>
+      <div>
+        <input id="name" type="text" placeholder="Name" name="Name" required/>
+      </div>
+      <div>
+        <label for="email">Email</label>
+      </div>
+      <div>
+        <input id="email" type="text" name="Email" required/>
+      </div>
+      <div>
+        <label for="password">Password</label>
+      </div>
+      <div>
+        <input id="password" type="text" name="Password" required/>
+      </div>
+      <div>
+        <input type="range" name="range" min="1" max="10" required>
+      </div>
+      <p>
+        What does HTML stand for?
+      </p>
+      <div>
+        <input id="check1" type="checkbox" name="check" value="1">
+        <label for="check1">Hyperlinks and Text Markup Language</label>
+      </div>
+      <div>
+        <input id="check2" type="checkbox" name="check" value="2">
+        <label for="check2">Home Tool Markup Language</label>
+      </div>
+      <div>
+        <input id="check3" type="checkbox" name="check" value="3">
+        <label for="check3">Hyper Text Markup Language</label>
+      </div>
+      <p>
+        What does HTTP stands for?
+      </p>
+      <div>
+        <input id="radio1" type="radio" name="radio" value="1">
+        <label for="radio1">Hyper Text Translate Protocol</label>
+      </div>
+      <div>
+        <input id="radio2" type="radio" name="radio" value="2">
+        <label for="radio2">Hyper Text Transmission Protocol</label>
+      </div>
+      <div>
+        <input id="radio3" type="radio" name="radio" value="3">
+        <label for="radio3">Hypertext Transfer Protocol</label>
+      </div>
+      <div>
+        <textarea name="text" rows="1">Comment</textarea>
+      </div>
+      </p>
+      What does HTML stand for?
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </fieldset>
+  </form>
 </body>
 </html>
