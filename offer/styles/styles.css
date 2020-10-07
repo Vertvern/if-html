@@ -1,0 +1,45 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.null {
+ width: 1232px;
+ height: 120px;
+}
+.text
+ {
+ max-width: 1232px;
+ height: 47px;
+ text-align: center;
+ font-weight: bold;
+ font-family: Arial;
+ font-style: normal ;
+ font-size: 30px;
+ }
+.line{
+ max-width: 1232px;
+ height: 84px;
+ text-align: center;
+}
+.container {
+ max-width: 1232px;
+ height: 148px;
+ display: flex;
+
+}
+.item {
+ width: 25%;
+ text-align: center;
+ }
+.text1 {
+ max-width: 1232px;
+ display:flex;
+ font-weight: normal;
+ font-size: 15px;
+
+}
+.textt {
+ width: 25%;
+ text-align: center;
+}
