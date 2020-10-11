@@ -1,0 +1,44 @@
+@import url('./Fonts.css');
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: '"Roboto',  sans-serif;
+}
+.null {
+ width: 1440px;
+ height: 120px;
+}
+.text1
+{
+ padding: 460px;
+ font-weight: 500;
+ font-size: 40px;
+}
+
+.line{
+ max-width: 1232px;
+ height: 84px;
+ text-align: center;
+}
+.container {
+ max-width: 1232px;
+ height: 148px;
+ display: flex;
+
+}
+.item {
+ width: 25%;
+ text-align: center;
+ }
+.text2 {
+ max-width: 1232px;
+ display:flex;
+ font-weight: 400;
+ font-size: 24px;
+
+}
+.textblock {
+ width: 25%;
+ text-align: center;
+}
