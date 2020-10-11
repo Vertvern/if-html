@@ -4,12 +4,15 @@
  box-sizing: border-box;
 }
 .null {
- width: 1232px;
+ width: 1440px;
  height: 120px;
 }
 .text1
 {
- padding-left: 567px;
+ padding: 460px;
+ font-family: "Roboto";
+ font-weight: 600;
+ font-size: 40px;
 }
 
 .line{
@@ -30,8 +33,8 @@
 .text2 {
  max-width: 1232px;
  display:flex;
- font-weight: normal;
- font-size: 15px;
+ font-family: "Roboto";
+ font-size: 24px;
 
 }
 .textblock {
