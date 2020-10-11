@@ -1,7 +1,9 @@
+@import url('./Fonts.css');
 *{
  padding: 0;
  margin: 0;
  box-sizing: border-box;
+ font-family: '"Roboto',  sans-serif;
 }
 .null {
  width: 1440px;
@@ -10,8 +12,7 @@
 .text1
 {
  padding: 460px;
- font-family: "Roboto";
- font-weight: 600;
+ font-weight: 500;
  font-size: 40px;
 }
 
@@ -33,7 +34,7 @@
 .text2 {
  max-width: 1232px;
  display:flex;
- font-family: "Roboto";
+ font-weight: 400;
  font-size: 24px;
 
 }
