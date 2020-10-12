@@ -1,0 +1,28 @@
+@import url('./fonts.css');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 1440px;
+  max-height: 630px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #10367C;
+  border: none;
+}
+
+
+.block{
+
+  margin:120px 272px 200px 104px;
+  display:flex;
+  font-size: 20px;
+  line-height: 24px;
+  /* визуально отступы не выглядят как 24 пикселя, особенно сравнивая с Фигмой */
+}
+.lists{
+  width: 1064px;
+  height: 310px;
+  }
+.title{
+  font-weight: 500;
+}
