@@ -1,41 +1,58 @@
 @import url('./Fonts.css');
-*{
- padding: 0;
- margin: 0;
- box-sizing: border-box;
- font-family: 'Roboto',  sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
-.null {
- width: 1440px;
- height: 120px;
+
+.body {
+  max-width: 1264px;
+  padding: 120px 16px;
+  margin: 0 auto;
 }
-.text1
-{
- padding: 460px;
- font-weight: 500;
- font-size: 40px;
+
+h4 {
+  margin-bottom: 20px;
 }
-.line{
- max-width: 1232px;
- height: 84px;
- text-align: center;
+
+.tcenter {
+  text-align: center;
 }
+
 .container {
- max-width: 1232px;
- height: 148px;
- display: flex;
+  display: flex;
 }
+
+.border {
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 120px;
+}
+
+.line {
+  width: 100px;
+  height: 4px;
+  margin: 0 auto 80px;
+  background-color: #f5bd41;
+  border: none;
+}
+
+.itemblock {
+  width: 25%;
+}
+
 .item {
- width: 25%;
- text-align: center;
- }
-.text2 {
- max-width: 1232px;
- display:flex;
- font-weight: 400;
- font-size: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 48px;
 }
+
 .textblock {
- width: 25%;
- text-align: center;
+  font-weight: 400;
+  font-size: 24px;
 }
