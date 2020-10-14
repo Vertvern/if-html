@@ -7,7 +7,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.body {
+.container {
   max-width: 1264px;
   padding: 120px 16px;
   margin: 0 auto;
@@ -21,14 +21,14 @@ h4 {
   text-align: center;
 }
 
-.container {
+.block {
   display: flex;
 }
 
-.border {
+h4 {
   font-weight: 500;
   font-size: 40px;
-  margin-bottom: 120px;
+  margin-bottom: 20px;
 }
 
 .line {
@@ -56,3 +56,24 @@ h4 {
   font-weight: 400;
   font-size: 24px;
 }
+
+.block {
+  display: flex;
+}
+
+.Footer {
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #10367C;
+  border: none;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.lists {
+  margin-left: auto;
+  margin-right: auto;
+}
+
