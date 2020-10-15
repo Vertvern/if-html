@@ -50,18 +50,22 @@ h4 {
 
 .textblock {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .block {
+
   display: flex;
 }
 
 .Footer {
+  max-width: 1440px;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 49px;
   background-color: #10367C;
   border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title {
@@ -69,7 +73,5 @@ h4 {
 }
 
 .lists {
-  margin-left: auto;
-  margin-right: auto;
+  width: 36%;
 }
-
