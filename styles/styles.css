@@ -59,13 +59,10 @@ h4 {
 }
 
 .Footer {
-  max-width: 1440px;
   font-size: 20px;
   line-height: 49px;
   background-color: #10367C;
   border: none;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .title {
