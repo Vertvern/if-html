@@ -50,7 +50,7 @@ h4 {
 
 .textblock {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .block {
@@ -60,7 +60,6 @@ h4 {
 
 .Footer {
   font-size: 20px;
-  line-height: 49px;
   background-color: #10367C;
   border: none;
 }
@@ -69,6 +68,36 @@ h4 {
   font-weight: 500;
 }
 
-.lists {
-  width: 36%;
+.list1 {
+  margin-right: 224px;
+}
+.list2{
+margin-right: 282px;
+}
+.s1{
+  margin-bottom: 23px;
+}
+.s14{
+  margin-bottom: 22px;
+}
+.s2 {
+  margin-bottom: 24px;
+}
+.s21{
+  margin-bottom: 20% ;
+}
+.s23{
+  margin-bottom: 22px;}
+
+  .s24{
+    margin-bottom: 17%;
+  }
+.s26{
+  margin-bottom: 16%;
+}
+.s31{
+  margin-bottom: 26px;
+}
+.s32{
+  margin-bottom: 10%;
 }
