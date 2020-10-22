@@ -7,28 +7,56 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.Top {
-  min-width: 100vh;
+.top {
+  min-height: 100vh;
   background-color: rgba(18, 18, 18, 0.25);
   background-image: url("../img/castelmezzano.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-origin: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.top_size {
-  margin-left: -16px;
-  margin-top: -69px;
+.container {
+  width: 100%;
+  max-width: 1264px;
+  padding: 120px 16px;
+  margin: 0 auto;
 }
 
-.sprite1 {
-  display: inline-flex;
-  height: 50px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.hrefL {
-  height: 40px;
-  margin-top: -5px;
+.menu {
+  display: flex;
+}
+
+.menu_nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu_settings {
+  display: flex;
+  align-items: center;
+}
+
+.nav_item {
+  margin-right: 24px;
+}
+
+.set_item {
+  margin-left: 24px;
+}
+
+.top_section {
+  padding-top: 0;
 }
 
 .logo_trip_icon {
@@ -39,55 +67,21 @@
   background-repeat: no-repeat;
   background-position-x: -2px;
   background-position-y: 0;
-  padding: -10px;
-}
-
-.hrefS {
-  margin-left: 683px;
-}
-
-.hrefA {
-  height: 30px;
-  margin-left: 24px;
-  margin-right: 50px;
 }
 
 a {
-  display: inline-block;
+  color: white;
   text-decoration: none;
   font-size: 24px;
-}
-
-a span {
-  color: white;
-  display: block;
   margin-bottom: 9px;
 }
 
-a hr {
+a .hr_line {
   width: 50px;
   height: 4px;
   background-color: #f5bd41;
   border: none;
-  margin-left: 5px;
-}
-
-.hrefN {
-  width: 30px;
-  height: 30px;
-}
-
-.hrefAcc {
-  text-align: center;
-  width: 40px;
-  height: 40px;
-}
-
-.hrefAcc {
-  width: 40px;
-  height: 40px;
-  margin-left: 24px;
-  margin-top: -5px;
+  margin-top: 9px;
 }
 
 .night_icon {
@@ -111,46 +105,46 @@ a hr {
 }
 
 .dsc {
-  margin-top: 188px;
-  margin-left: 0;
+  display: flex;
+  padding-top: 140px;
+  padding-bottom: 100px;
 }
 
 .disc {
-  color: white;
-  display: block;
-  font-size: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 50px;
+  font-weight: 400;
   letter-spacing: 1px;
-  margin-bottom: 1px;
+  color: white;
 }
 
 .check {
+  display: flex;
   color: white;
-  margin-top: 100px;
-  display: inline-block;
   font-size: 18px;
-  margin-bottom: 23px;
+  padding-bottom: 24px;
 }
 
-.checked {
-  margin-left: 24px;
-  margin-right: 218px;
+.checked1 {
+  margin-left: 25px;
+}
+
+.checked2 {
+  margin-left: 225px;
 }
 
 .formblock {
-
   display: inline-block;
-
   width: 1232px;
-  height: 64px;
+  height: 65px;
   margin-bottom: 120px;
 }
 
 .form_sp {
-
   background-color: white;
   border-radius: 8px;
   height: 64px;
-
 }
 
 select {
@@ -183,14 +177,12 @@ select {
 .blbutton {
   border: none;
   border-radius: 8px;
-  width: 194px;
-  height: 64px;
+  width: 195px;
+  height: 65px;
   background-color: rgba(48, 119, 198, 1);
   color: white;
-  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   margin-right: -5px;
-  justify-items: normal;
 }
 
 .google_icon {
@@ -214,21 +206,12 @@ select {
   margin-left: 16px;
 }
 
-.share {
-  display: inline-flex;
-  margin-left: 480px;
+.download_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
-  max-width: 1232px;
-  padding: 120px 16px;
-  margin: 0 auto;
-}
-
-.offer_size {
-  margin-left: -23px;
-  margin-right: -23px;
-}
 
 .tcenter {
   text-align: center;
@@ -238,7 +221,6 @@ h4 {
   font-weight: 500;
   font-size: 40px;
   margin-bottom: 20px;
-
 }
 
 .line {
@@ -300,7 +282,6 @@ h4 {
   justify-content: center;
   align-items: center;
   margin-bottom: 46px;
-
 }
 
 .item_4 {
@@ -312,7 +293,7 @@ h4 {
   font-size: 24px;
 }
 
-.Footer {
+.footer {
   font-size: 20px;
   background-color: #10367C;
   border: none;
@@ -320,7 +301,6 @@ h4 {
 
 .block2 {
   display: flex;
-  margin-left: -16px;
 }
 
 .li {
