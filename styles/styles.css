@@ -7,6 +7,13 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.sprite_ {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
 .top {
   min-height: 100vh;
   background-color: rgba(18, 18, 18, 0.25);
@@ -27,10 +34,36 @@
 }
 
 .header {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.logo_trip_icon {
+  width: 205px;
+  height: 40px;
+}
+
+.night_icon {
+  width: 30px;
+  height: 30px;
+}
+
+.account_icon {
+  width: 40px;
+  height: 40px;
+}
+
+.google_icon {
+  width: 135px;
+  height: 40px;
+}
+
+.apple_icon {
+  width: 120px;
+  height: 40px;
+  margin-left: 16px;
 }
 
 .menu {
@@ -40,6 +73,7 @@
 .menu_nav {
   display: flex;
   align-items: center;
+
 }
 
 .menu_settings {
@@ -48,6 +82,7 @@
 }
 
 .nav_item {
+  display: flex;
   margin-right: 24px;
 }
 
@@ -56,27 +91,17 @@
 }
 
 .top_section {
+  display: inline;
   padding-top: 0;
-}
-
-.logo_trip_icon {
-  width: 205px;
-  height: 40px;
-  background-color: transparent;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position-x: -2px;
-  background-position-y: 0;
 }
 
 a {
   color: white;
   text-decoration: none;
   font-size: 24px;
-  margin-bottom: 9px;
 }
 
-a .hr_line {
+a .hr_li1ne {
   width: 50px;
   height: 4px;
   background-color: #f5bd41;
@@ -84,29 +109,10 @@ a .hr_line {
   margin-top: 9px;
 }
 
-.night_icon {
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position-x: -209px;
-  background-position-y: -5px;
-}
-
-.account_icon {
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position-x: -240px;
-  background-position-y: 0;
-}
 
 .dsc {
   display: flex;
-  padding-top: 140px;
+  padding-top: 150px;
   padding-bottom: 100px;
 }
 
@@ -114,8 +120,7 @@ a .hr_line {
   display: flex;
   flex-wrap: wrap;
   font-size: 50px;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-weight: 500;
   color: white;
 }
 
@@ -185,31 +190,10 @@ select {
   margin-right: -5px;
 }
 
-.google_icon {
-  width: 135px;
-  height: 40px;
-  background-color: transparent;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position-x: -401px;
-  background-position-y: 0;
-}
-
-.apple_icon {
-  width: 120px;
-  height: 40px;
-  background-color: transparent;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position-x: -281px;
-  background-position-y: 0;
-  margin-left: 16px;
-}
 
 .download_icons {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 
