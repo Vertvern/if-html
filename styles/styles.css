@@ -216,44 +216,24 @@ h4 {
 }
 
 .support_icon {
-  width: 75px;
+  width: 76px;
   height: 92px;
-  background-color: transparent;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position-x: 0;
-  background-position-y: -45px;
-}
+ }
 
 .cmnctn_icon {
-  width: 90px;
-  height: 85px;
-  background-color: transparent;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position-x: -78px;
-  background-position-y: -49px;
+  width: 84px;
+  height: 84px;
 }
 
 .book_icon {
   width: 100px;
   height: 67px;
-  background-color: transparent;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position-x: -168px;
-  background-position-y: -59px;
-}
+ }
 
 .review_icon {
-  width: 95px;
-  height: 95px;
-  background-color: transparent;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position-x: -270px;
-  background-position-y: -43px;
-}
+  width: 92px;
+  height: 84px;
+  }
 
 .block {
   display: flex;
