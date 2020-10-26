@@ -21,9 +21,9 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-origin: border-box;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  display: none;
 }
 
 .container {
@@ -43,6 +43,7 @@
 .logo_trip_icon {
   width: 205px;
   height: 40px;
+  fill: #3077C6;
 }
 
 .night_icon {
@@ -96,7 +97,7 @@
 }
 
 a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-size: 24px;
 }
@@ -121,12 +122,12 @@ a .hr_li1ne {
   flex-wrap: wrap;
   font-size: 50px;
   font-weight: 500;
-  color: white;
+  color: #ffffff;
 }
 
 .check {
   display: flex;
-  color: white;
+  color: #ffffff;
   font-size: 18px;
   padding-bottom: 24px;
 }
@@ -185,7 +186,7 @@ select {
   width: 195px;
   height: 65px;
   background-color: rgba(48, 119, 198, 1);
-  color: white;
+  color: #ffffff;
   font-size: 24px;
   margin-right: -5px;
 }
@@ -218,7 +219,7 @@ h4 {
 .support_icon {
   width: 76px;
   height: 92px;
- }
+}
 
 .cmnctn_icon {
   width: 84px;
@@ -228,12 +229,12 @@ h4 {
 .book_icon {
   width: 100px;
   height: 67px;
- }
+}
 
 .review_icon {
   width: 92px;
   height: 84px;
-  }
+}
 
 .block {
   display: flex;
@@ -245,11 +246,11 @@ h4 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 }
 
 .item_4 {
-  width: 340px;
+  width: 25%;
 }
 
 .textblock {
@@ -257,10 +258,77 @@ h4 {
   font-size: 24px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-grow: 1;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+
+/*@media screen and (min-width:0px) and (max-width:480px){*/
+/*[class*="col-"]{*/
+/*  width: 100%;*/
+/*}*/
+/*}*/
 .footer {
   font-size: 20px;
   background-color: #10367C;
   border: none;
+}
+
+.mob_footer {
+  display: none;
 }
 
 .block2 {
@@ -319,5 +387,95 @@ h4 {
   margin-bottom: 10%;
 }
 
+@media screen and (max-width: 360px) {
+  .col {
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .textblock {
+    font-size: 15px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .item.col {
+    margin: 0;
+  }
+
+  .item_4.col.tcenter {
+    margin-top: 16px;
+  }
+
+  h4 {
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+
+  .support_icon {
+    width: 52px;
+    height: 64px;
+  }
+
+  .cmnctn_icon {
+    width: 58px;
+    height: 58px;
+  }
+
+  .book_icon {
+    width: 70px;
+    height: 46px;
+  }
+
+  .review_icon {
+    width: 64px;
+    height: 58px;
+  }
+
+  .block2 {
+    display: none;
+  }
+
+  .mob_footer {
+    display: flex;
+    text-align: center;
+  }
+
+  .mob_logo_trip_icon {
+
+    width: 98px;
+    height: 19px;
+    fill: #ffffff;
+    background-color: transparent;
+    margin-top: -80px;
+  }
+
+  .mob_footer_list a {
+    display: inline-flex;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: underline;
+  }
+
+  .mob_footer_list.col {
+    margin-top: -25px;
+  }
+
+  .mob_f_href {
+    margin: 5px;
+  }
+
+  .copy {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 25px;
+  }
+}
 
 
