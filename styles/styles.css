@@ -1,10 +1,30 @@
 @import url('./Fonts.css');
 
+:root {
+  --primary: #3077c6;
+  --primary-dark: #10367C;
+  --secondary: #f5bd41;
+  --base-dark-mode100: #121212;
+  --base-dark-mode200: #1d1e1f;
+  --base-dark-mode300: #4d4d4d;
+  --base-stroke-main: #f3f3f4;
+  --base-text-color100: #383838;
+  --base-text-color300: #bfbfbf;
+  --base-white: #ffffff;
+  --base-bg-color: #eaf0f9;
+  --col-size: calc(100% / 12);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+  color: var(--base-text-color100);
 }
 
 .sprite_ {
@@ -12,6 +32,13 @@
   visibility: hidden;
   width: 0;
   height: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1264px;
+  padding: 120px 16px;
+  margin: 0 auto;
 }
 
 .top {
@@ -26,15 +53,9 @@
   display: none;
 }
 
-.container {
-  width: 100%;
-  max-width: 1264px;
-  padding: 120px 16px;
-  margin: 0 auto;
-}
 
 .header {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -43,7 +64,7 @@
 .logo_trip_icon {
   width: 205px;
   height: 40px;
-  fill: #3077C6;
+  fill: var(--primary);
 }
 
 .night_icon {
@@ -54,17 +75,6 @@
 .account_icon {
   width: 40px;
   height: 40px;
-}
-
-.google_icon {
-  width: 135px;
-  height: 40px;
-}
-
-.apple_icon {
-  width: 120px;
-  height: 40px;
-  margin-left: 16px;
 }
 
 .menu {
@@ -92,23 +102,22 @@
 }
 
 .top_section {
-  display: inline;
   padding-top: 0;
 }
 
 a {
-  color: #ffffff;
+  color: var(--base-white);
   text-decoration: none;
   font-size: 24px;
 }
 
-a .hr_li1ne {
-  width: 50px;
-  height: 4px;
-  background-color: #f5bd41;
-  border: none;
-  margin-top: 9px;
-}
+/*a .hr_line { линия, ховер*/
+/*  width: 50px;*/
+/*  height: 4px;*/
+/*  background-color: var(--secondary);*/
+/*  border: none;*/
+/*  margin-top: 9px;*/
+/*}*/
 
 
 .dsc {
@@ -122,22 +131,24 @@ a .hr_li1ne {
   flex-wrap: wrap;
   font-size: 50px;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--base-white);
 }
 
 .check {
   display: flex;
-  color: #ffffff;
+  color: var(--base-white);
   font-size: 18px;
-  padding-bottom: 24px;
+  padding-bottom: 20px;
 }
 
 .checked1 {
   margin-left: 25px;
+  color: inherit;
 }
 
 .checked2 {
   margin-left: 225px;
+  color: inherit;
 }
 
 .formblock {
@@ -148,7 +159,7 @@ a .hr_li1ne {
 }
 
 .form_sp {
-  background-color: #ffffff;
+  background-color: var(--base-white);
   border-radius: 8px;
   height: 64px;
 }
@@ -169,7 +180,7 @@ select {
 
 .f2 {
   width: 260px;
-  border-color: #f5bd41;
+  border-color: var(--secondary);
   border-width: 3px;
   padding-left: 22px;
 }
@@ -185,8 +196,8 @@ select {
   border-radius: 8px;
   width: 195px;
   height: 65px;
-  background-color: rgba(48, 119, 198, 1);
-  color: #ffffff;
+  background-color: var(--primary);
+  color: var(--base-white);
   font-size: 24px;
   margin-right: -5px;
 }
@@ -197,12 +208,23 @@ select {
   justify-content: center;
 }
 
+.google_icon {
+  width: 135px;
+  height: 40px;
+}
+
+.apple_icon {
+  width: 120px;
+  height: 40px;
+  margin-left: 16px;
+}
+
 
 .tcenter {
   text-align: center;
 }
 
-h4 {
+h2 {
   font-weight: 500;
   font-size: 40px;
   margin-bottom: 20px;
@@ -211,49 +233,13 @@ h4 {
 .line {
   width: 100px;
   height: 4px;
-  margin: 0 auto 80px;
-  background-color: #f5bd41;
+  margin: 20px auto 75px;
+  background-color: var(--secondary);
   border: none;
 }
 
-.support_icon {
-  width: 76px;
-  height: 92px;
-}
-
-.cmnctn_icon {
-  width: 84px;
-  height: 84px;
-}
-
-.book_icon {
-  width: 100px;
-  height: 67px;
-}
-
-.review_icon {
-  width: 92px;
-  height: 84px;
-}
-
-.block {
-  display: flex;
-}
-
-.item {
-  width: 100%;
-  height: 100px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 45px;
-}
-
-.item_4 {
-  width: 25%;
-}
-
-.textblock {
+span.textblock {
+  display: block;
   font-weight: 400;
   font-size: 24px;
 }
@@ -261,30 +247,50 @@ h4 {
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -8px;
 }
 
-.col {
+svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.offer svg {
+  font-size: 95px;
+  color: var(--primary);
+  margin-bottom: 48px;
+}
+
+/*не  получилось сменить цвет, пока не удалил заливку из данных спрайта*/
+
+[class*="col"] {
   flex-grow: 1;
+  padding: 8px;
+}
+
+[class*="col-"] {
+  flex-grow: 0;
 }
 
 .col-1 {
-  width: 8.33%;
+  width: var(--col-size);
 }
 
 .col-2 {
-  width: 16.66%;
+  width: calc(var(--col-size) * 2);
 }
 
 .col-3 {
-  width: 25%;
+  width: calc(var(--col-size) * 3);
 }
 
 .col-4 {
-  width: 33.33%;
+  width: calc(var(--col-size) * 4);
 }
 
 .col-5 {
-  width: 41.66%;
+  width: calc(var(--col-size) * 5);
 }
 
 .col-6 {
@@ -292,35 +298,29 @@ h4 {
 }
 
 .col-7 {
-  width: 58.33%;
+  width: calc(var(--col-size) * 7);
 }
 
 .col-8 {
-  width: 66.66%;
+  width: calc(var(--col-size) * 8);
 }
 
 .col-9 {
-  width: 75%;
+  width: calc(var(--col-size) * 9);
 }
 
 .col-10 {
-  width: 83.33%;
+  width: calc(var(--col-size) * 10);
 }
 
 .col-11 {
-  width: 91.66%;
+  width: calc(var(--col-size) * 11);
 }
 
 .col-12 {
   width: 100%;
 }
 
-
-/*@media screen and (min-width:0px) and (max-width:480px){*/
-/*[class*="col-"]{*/
-/*  width: 100%;*/
-/*}*/
-/*}*/
 .footer {
   font-size: 20px;
   background-color: #10367C;
@@ -331,127 +331,131 @@ h4 {
   display: none;
 }
 
-.block2 {
+.footer_list {
   display: flex;
+  color: var(--base-white);
+  margin-top: -5px;
 }
 
-.li {
-  margin-left: 16px;
-}
-
-.title {
-  font-weight: 500;
-}
+/*.list1{ выравнивание футера блоками по сетке - выглядит лучше списков*/
+/*  padding-left: 0px;*/
+/*  line-height: 48px;*/
+/*}*/
+/*.list2{*/
+/*  padding-left: 5px;*/
+/*  line-height: 48px;*/
+/*}*/
+/*.list3{*/
+/*  line-height: 48px;*/
+/*  padding-left: 10px;*/
+/*}*/
 
 .list1 {
-  margin-right: 224px;
+  padding: 0;
 }
 
 .list2 {
-  margin-right: 282px;
+  margin-top: -5px;
+  padding-left: 5px;
 }
 
-.s1 {
-  margin-bottom: 23px;
+.list3 {
+  margin-top: -5px;
+  padding-left: 10px;
 }
 
-.s14 {
-  margin-bottom: 22px;
-}
-
-.s2 {
+li {
   margin-bottom: 24px;
 }
 
-.s21 {
-  margin-bottom: 20%;
-}
-
-.s23 {
-  margin-bottom: 22px;
-}
-
-.s24 {
-  margin-bottom: 17%;
-}
-
-.s26 {
-  margin-bottom: 16%;
-}
-
-.s31 {
-  margin-bottom: 26px;
-}
-
-.s32 {
-  margin-bottom: 10%;
-}
-
 @media screen and (max-width: 360px) {
-  .col {
-    flex-wrap: wrap;
-    align-content: center;
-    width: 100%;
-    flex-grow: 1;
+  :root {
+    --col-size: calc(100 / 6);
   }
 
-  .textblock {
+  .col-xs-1 {
+    width: var(--col-size);
+  }
+
+  .col-xs-2 {
+    width: calc(var(--col-size) * 2);
+  }
+
+  .col-xs-3 {
+    width: calc(var(--col-size) * 3);
+  }
+
+  .col-xs-4 {
+    width: calc(var(--col-size) * 4);
+  }
+
+  .col-xs-5 {
+    width: calc(var(--col-size) * 5);
+  }
+
+  .col-xs-6 {
+    width: 100%;
+  }
+
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  h2 {
+    margin-top: -16px;
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .offer svg {
+    font-size: 64px;
+    color: var(--primary);
+    margin-bottom: 16px;
+  }
+
+  .offer span.textblock {
     font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  /*.support_icon {*/
+  /*  width: 52px;*/
+  /*  height: 64px;*/
+  /*}*/
+  /*.cmnctn_icon {*/
+  /*  width: 58px;*/
+  /*  height: 58px;*/
+  /*}*/
+  /*.book_icon {*/
+  /*  width: 70px;*/
+  /*  height: 46px;*/
+  /*}*/
+  /*.review_icon {*/
+  /*  width: 64px;*/
+  /*  height: 58px;*/
+  /*} при ссылке через класс размеры получаются более точными, но нужно делать отдельные отступы из-за разницы в размерах между иконками */
+  .mob_footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: -80px;
+  }
+
+  .footer_list {
+    display: none;
   }
 
   .line {
     display: none;
   }
 
-  .item.col {
-    margin: 0;
-  }
-
-  .item_4.col.tcenter {
-    margin-top: 16px;
-  }
-
-  h4 {
-    margin-bottom: 0;
-    font-size: 28px;
-  }
-
-  .support_icon {
-    width: 52px;
-    height: 64px;
-  }
-
-  .cmnctn_icon {
-    width: 58px;
-    height: 58px;
-  }
-
-  .book_icon {
-    width: 70px;
-    height: 46px;
-  }
-
-  .review_icon {
-    width: 64px;
-    height: 58px;
-  }
-
-  .block2 {
-    display: none;
-  }
-
-  .mob_footer {
-    display: flex;
-    text-align: center;
-  }
-
-  .mob_logo_trip_icon {
-
+  .mob_footer svg {
     width: 98px;
     height: 19px;
-    fill: #ffffff;
-    background-color: transparent;
-    margin-top: -80px;
+    fill: var(--base-white);
   }
 
   .mob_footer_list a {
@@ -459,22 +463,20 @@ h4 {
     font-weight: 500;
     font-size: 15px;
     text-decoration: underline;
-  }
-
-  .mob_footer_list.col {
-    margin-top: -25px;
+    margin-bottom: 10px;
+    margin-top: 24px;
   }
 
   .mob_f_href {
-    margin: 5px;
+    color: var(--base-white);
+    margin: -3px;
   }
 
   .copy {
     width: 100%;
     font-size: 12px;
     font-weight: 400;
-    color: #ffffff;
-    margin-top: 25px;
+    color: var(--base-white);
   }
 }
 

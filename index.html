@@ -8,12 +8,11 @@
   <style>
     li {
       list-style-type: none;
-      color: white;
+      color: var(--base-white);
     }
   </style>
 </head>
 <body>
-
 <svg xmlns="http://www.w3.org/2000/svg" class="sprite_">
   <symbol id="logo_trip_icon" viewBox="0 0 205 40">
     <path
@@ -129,22 +128,22 @@
   <symbol id="support_icon" viewBox="0 0 76 92">
     <path
       d="M67.167 54.333V71h-8.334V54.333h8.334zm-50 0V71H13a4.179 4.179 0 01-4.167-4.167v-12.5h8.334zM38 .167C17.292.167.5 16.958.5 37.667v29.166c0 6.917 5.583 12.5 12.5 12.5h12.5V46H8.833v-8.333C8.833 21.542 21.875 8.5 38 8.5s29.167 13.042 29.167 29.167V46H50.5v33.333h16.667V83.5H38v8.333h25c6.917 0 12.5-5.583 12.5-12.5V37.667c0-20.709-16.792-37.5-37.5-37.5z"
-      fill="#3077C6"/>
+    />
   </symbol>
   <symbol id="cmnctn_icon" viewBox="0 0 84 84">
     <path
       d="M54.5 8.667v29.166H13.542l-4.875 4.875V8.667H54.5zM58.667.333H4.5A4.179 4.179 0 00.333 4.5v58.333L17 46.167h41.667A4.179 4.179 0 0062.833 42V4.5A4.179 4.179 0 0058.667.333zM79.5 17h-8.333v37.5H17v8.333A4.179 4.179 0 0021.167 67H67l16.667 16.667v-62.5A4.179 4.179 0 0079.5 17z"
-      fill="#3077C6"/>
+    />
   </symbol>
   <symbol id="book_icon" viewBox="0 0 100 67">
     <path
       d="M16.667 8.333h75V0h-75c-4.584 0-8.334 3.75-8.334 8.333v45.834H0v12.5h58.333v-12.5H16.667V8.333zm79.166 8.334h-25a4.179 4.179 0 00-4.166 4.166V62.5a4.179 4.179 0 004.166 4.167h25A4.179 4.179 0 00100 62.5V20.833a4.179 4.179 0 00-4.167-4.166zm-4.166 37.5H75V25h16.667v29.167z"
-      fill="#3077C6"/>
+    />
   </symbol>
   <symbol id="review_icon" viewBox="0 0 92 84">
     <path
       d="M83.333 29.167H57.042L61 10.125l.125-1.333a6.272 6.272 0 00-1.833-4.417L54.875 0 27.458 27.458A8.147 8.147 0 0025 33.333V75c0 4.583 3.75 8.333 8.333 8.333h37.5A8.277 8.277 0 0078.5 78.25l12.583-29.375a8.232 8.232 0 00.584-3.042V37.5c0-4.583-3.75-8.333-8.334-8.333zm0 16.666L70.833 75h-37.5V33.333L51.417 15.25 46.792 37.5h36.541v8.333zM0 33.333h16.667v50H0v-50z"
-      fill="#3077C6"/>
+    />
   </symbol>
   <symbol id="arrow_1" viewBox="0 0 48 48">
     <g filter="url(#filter0_d)">
@@ -315,62 +314,46 @@
     </div>
   </div>
 </div>
-<div class="offer row">
+<div class="offer">
   <div class="container">
-    <h4 class="tcenter">What do we offer</h4>
+    <h2 class="tcenter">What do we offer</h2>
     <hr class="line">
-    <div class="block col">
-      <div class="item_4 col tcenter">
-        <div class="item col ">
-          <div>
-            <svg class="support_icon col">
-              <use href="#support_icon">
-              </use>
-            </svg>
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-3 tcenter col-xs-6">
+        <svg>
+          <use href="#support_icon">
+          </use>
+        </svg>
         <span class="textblock">Support 24/7</span>
       </div>
-      <div class="item_4 col tcenter">
-        <div class="item col">
-          <div>
-            <svg class="cmnctn_icon col">
-              <use href="#cmnctn_icon">
-              </use>
-            </svg>
-          </div>
-        </div>
+      <div class="col-3 tcenter col-xs-6">
+        <svg>
+          <use href="#cmnctn_icon">
+          </use>
+        </svg>
         <span class="textblock">Communicate directly</span>
       </div>
-      <div class="item_4 col tcenter">
-        <div class="item mob_text1 col">
-          <div>
-            <svg class="book_icon col">
-              <use href="#book_icon">
-              </use>
-            </svg>
-          </div>
-        </div>
+      <div class="col-3 tcenter col-xs-6">
+        <svg>
+          <use href="#book_icon">
+          </use>
+        </svg>
         <span class="textblock">Book online</span>
       </div>
-      <div class="item_4 col tcenter">
-        <div class="item col">
-          <div>
-            <svg class="review_icon col">
-              <use href="#review_icon">
-              </use>
-            </svg>
-          </div>
-        </div>
-        <span class="textblock tcenter">Real guest reviews</span>
+      <div class="col-3 tcenter col-xs-6">
+        <svg>
+          <use href="#review_icon">
+          </use>
+        </svg>
+        <span class="textblock">Real guest reviews</span>
       </div>
     </div>
   </div>
 </div>
-<div class="footer col">
-  <div class="container col">
-    <div class="block2 col">
-      <div class="list1">
+<div class="footer">
+  <div class="container">
+    <div class="footer_list">
+      <div class="list1 col-4">
         <ul>
           <li class="title s1">About</li>
           <li class="s1">How Triphouse works</li>
@@ -379,7 +362,7 @@
           <li class="s1">Terms</li>
         </ul>
       </div>
-      <div class="list2">
+      <div class="list2 col-4">
         <ul>
           <li class="title s21">Property types</li>
           <li class="s2">Guest houses</li>
@@ -390,34 +373,55 @@
           <li class="s2">Hostels</li>
         </ul>
       </div>
-      <div>
+      <div class="list3 col-4">
         <ul>
           <li class="title s31">Support</li>
           <li class="s32">Contact Customer Service</li>
           <li class="s33">FAQ</li>
         </ul>
       </div>
+      <!--      <div class="list1 col-4">-->
+      <!--        <div><span class="title s1">About</span></div>-->
+      <!--        <div><span class="s1">How Triphouse works</span></div>-->
+      <!--        <div><span class="s1">Careers</span></div>-->
+      <!--        <div><span class="s1">Privacy</span></div>-->
+      <!--        <div><span class="s1">Terms</span></div>-->
+      <!--      </div>-->
+      <!--        <div class="list2 col-4">-->
+      <!--          <div><span class="title s2">Property types</span></div>-->
+      <!--          <div><span class="s2">Guest houses</span></div>-->
+      <!--            <div><span class="s2">Hotels</span></div>-->
+      <!--            <div><span class="s2">Apartments</span></div>-->
+      <!--            <div><span class="s2">Villas</span></div>-->
+      <!--            <div><span class="s2">Holiday homes</span></div>-->
+      <!--            <div><span class="s2">Hostels</span></div>-->
+      <!--          </div>-->
+      <!--          <div class="list3 col-4">-->
+      <!--            <div><span class="title s3">Support</span></div>-->
+      <!--            <div><span class="s3">Contact Customer Service</span></div>-->
+      <!--            <div><span class="s3">FAQ</span></div>-->
+      <!--          </div>-->
     </div>
-    <div class="mob_footer col">
-      <div class="mob_logo_trip_icon col">
-        <svg class="mob_logo_trip_icon">
-          <use href="#logo_trip_icon">
-          </use>
-        </svg>
-      </div>
-      <div class="mob_footer_list col">
-        <a href="#">
-          <div class="mob_f_href">About</div>
-        </a>
-        <a href="#">
-          <div class="mob_f_href">Property types</div>
-        </a>
-        <a href="#">
-          <div class="mob_f_href">Support</div>
-        </a>
-      </div>
-      <div class="copy">&copy; 2020 Triphouse, Inc. All rights reserved</div>
+  </div>
+  <div class="container mob_footer">
+    <div>
+      <svg>
+        <use href="#logo_trip_icon">
+        </use>
+      </svg>
     </div>
+    <div class="mob_footer_list col-xs-6">
+      <a href="#">
+        <div class="mob_f_href col-xs-2">About</div>
+      </a>
+      <a href="#">
+        <div class="mob_f_href col-xs-2">Property types</div>
+      </a>
+      <a href="#">
+        <div class="mob_f_href col-xs-2">Support</div>
+      </a>
+    </div>
+    <div class="copy col-xs-6">&copy; 2020 Triphouse, Inc. All rights reserved</div>
   </div>
 </div>
 </body>
