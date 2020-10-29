@@ -13,6 +13,7 @@
   --base-white: #ffffff;
   --base-bg-color: #eaf0f9;
   --col-size: calc(100% / 12);
+  --base-font-size: 24px;
 }
 
 * {
@@ -50,7 +51,6 @@ body {
   background-origin: border-box;
   flex-direction: column;
   justify-content: space-between;
-  display: none;
 }
 
 
@@ -264,6 +264,41 @@ svg {
 
 /*не  получилось сменить цвет, пока не удалил заливку из данных спрайта*/
 
+.homes {
+  min-height: 100vh;
+  background-color: var(--base-bg-color);
+}
+
+.homes.container {
+  padding: 120px 4px;
+}
+
+.homes_pic.container {
+  padding: 0 4px;
+}
+
+.homes_pic {
+  display: flex;
+}
+
+.homes h2 {
+  margin-bottom: 105px;
+}
+
+
+div.descr {
+  font-size: var(--base-font-size);
+  color: var(--primary);
+  margin: 24px 0 24px;
+}
+
+div.placement {
+  font-size: var(--base-font-size);
+  color: var(--base-text-color300);
+}
+
+/*добавить спрайт кнопки*/
+
 [class*="col"] {
   flex-grow: 1;
   padding: 8px;
@@ -368,9 +403,14 @@ li {
   margin-bottom: 24px;
 }
 
+
 @media screen and (max-width: 360px) {
   :root {
     --col-size: calc(100 / 6);
+  }
+
+  .top {
+    display: none;
   }
 
   .col-xs-1 {
@@ -414,10 +454,18 @@ li {
     margin-bottom: 16px;
   }
 
-  .offer span.textblock {
+  span.textblock {
     font-size: 15px;
     margin-bottom: 20px;
   }
+
+  span.textblock.mrgn0 {
+    margin-bottom: 0;
+  }
+
+  /*.col-xs-6 span.textblock:last-child {
+    margin-bottom: 0;
+  } почему-то сбрасываются все отступы textblock, а не последнего/*
 
   /*.support_icon {*/
   /*  width: 52px;*/
@@ -480,4 +528,127 @@ li {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .top {
+    display: none;
+  }
+
+  span.textblock {
+    margin-bottom: 20px;
+  }
+
+  /*селекторы не подключаются*/
+  .col-md-1 {
+    width: var(--col-size);
+  }
+
+  .col-md-2 {
+    width: calc(var(--col-size) * 2);
+  }
+
+  .col-md-3 {
+    width: calc(var(--col-size) * 3);
+  }
+
+  .col-md-4 {
+    width: calc(var(--col-size) * 4);
+  }
+
+  .col-md-5 {
+    width: calc(var(--col-size) * 5);
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: calc(var(--col-size) * 7);
+  }
+
+  .col-md-8 {
+    width: calc(var(--col-size) * 8);
+  }
+
+  .col-md-9 {
+    width: calc(var(--col-size) * 9);
+  }
+
+  .col-md-10 {
+    width: calc(var(--col-size) * 10);
+  }
+
+  .col-md-11 {
+    width: calc(var(--col-size) * 11);
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .footer {
+    font-size: 16px;
+    background-color: #10367C;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .top {
+    display: none;
+  }
+
+  span.textblock {
+    margin-bottom: 20px;
+  }
+
+  /*селекторы не подключаются*/
+  .col-md-1 {
+    width: var(--col-size);
+  }
+
+  .col-md-2 {
+    width: calc(var(--col-size) * 2);
+  }
+
+  .col-md-3 {
+    width: calc(var(--col-size) * 3);
+  }
+
+  .col-md-4 {
+    width: calc(var(--col-size) * 4);
+  }
+
+  .col-md-5 {
+    width: calc(var(--col-size) * 5);
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: calc(var(--col-size) * 7);
+  }
+
+  .col-md-8 {
+    width: calc(var(--col-size) * 8);
+  }
+
+  .col-md-9 {
+    width: calc(var(--col-size) * 9);
+  }
+
+  .col-md-10 {
+    width: calc(var(--col-size) * 10);
+  }
+
+  .col-md-11 {
+    width: calc(var(--col-size) * 11);
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
 
