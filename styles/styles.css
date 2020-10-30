@@ -241,7 +241,7 @@ h2 {
 span.textblock {
   display: block;
   font-weight: 400;
-  font-size: 24px;
+  font-size: var(--base-font-size);
 }
 
 .row {
@@ -259,7 +259,11 @@ svg {
 .offer svg {
   font-size: 95px;
   color: var(--primary);
-  margin-bottom: 48px;
+  margin-bottom: 45px;
+}
+
+.col-3.tcenter.col-md-6.col-xs-6 {
+  padding-bottom: 0;
 }
 
 /*не  получилось сменить цвет, пока не удалил заливку из данных спрайта*/
@@ -275,6 +279,8 @@ svg {
 
 .homes_pic.container {
   padding: 0 4px;
+  margin-top: -16px;
+  margin-bottom: -56px;
 }
 
 .homes_pic {
@@ -282,14 +288,13 @@ svg {
 }
 
 .homes h2 {
-  margin-bottom: 105px;
+  margin-bottom: 115px;
 }
-
 
 div.descr {
   font-size: var(--base-font-size);
   color: var(--primary);
-  margin: 24px 0 24px;
+  margin: 20px 0 8px;
 }
 
 div.placement {
@@ -297,7 +302,125 @@ div.placement {
   color: var(--base-text-color300);
 }
 
-/*добавить спрайт кнопки*/
+figcaption svg {
+  font-size: 48px;
+  fill: var(--base-white);
+  position: relative;
+  left: 895px;
+  top: -305px;
+}
+
+
+.destination.container {
+  padding-bottom: 0;
+}
+
+.destination h2 {
+  margin-bottom: 100px;
+}
+
+.dest_button {
+  display: inline-flex;
+  background-color: var(--base-stroke-main);
+  max-width: 624px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 56px;
+}
+
+.region_0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 192px;
+  height: 64px;
+  border-radius: 8px;
+  font-size: var(--base-font-size);
+}
+
+.region_0:active {
+  background-color: var(--primary);
+  color: var(--base-white);
+}
+
+.region_0:last-child {
+  width: 240px;
+}
+
+.destination_pic.container {
+  display: flex;
+  padding: 0 0 100px;
+}
+/*из-за разницы в размерах картинки есть разница в отступах*/
+
+.placement_ {
+  font-size: var(--base-font-size);
+  color: var(--primary);
+  margin-top: 20px;
+}
+
+.destination svg {
+  font-size: 48px;
+  fill: var(--base-white);
+  position: relative;
+  left: 592px;
+  bottom: 60px;
+}
+
+.sign_up.container {
+  margin-top: 5px;
+  align-items: center;
+  padding: 24px;
+  width: 1232px;
+  display: flex;
+  height: 200px;
+  background-color: var(--base-stroke-main);
+  font-size: var(--base-font-size);
+  font-weight: 500;
+}
+
+.sign_title {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign_up .cont {
+  margin-right: 24px;
+  font-size: 86px;
+}
+
+.sign_text {
+  border-width: 2px;
+  border-radius: 8px;
+  border: var(--primary);
+}
+
+.sign_up_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid var(--primary); /*??? цвет  и граница  не задавались через цвет границы и ширину в длинном варианте ???*/
+  color: var(--primary);
+  margin: 20px 0 10px 0;
+}
+
+.sign_svg {
+  position: relative;
+  left: 600px;
+  bottom: 60px;
+  font-size: 26px;
+}
+
+/*разница в отступах между кнопкой*/
+
+.footer {
+  display: none;
+}
 
 [class*="col"] {
   flex-grow: 1;
