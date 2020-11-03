@@ -2,7 +2,7 @@
 
 :root {
   --primary: #3077c6;
-  --primary-dark: #10367C;
+  --primary-dark: #10367c;
   --secondary: #f5bd41;
   --base-dark-mode100: #121212;
   --base-dark-mode200: #1d1e1f;
@@ -76,6 +76,10 @@ body {
   height: 40px;
 }
 
+.mob_menu_icon {
+  display: none;
+}
+
 .menu {
   display: flex;
 }
@@ -109,9 +113,9 @@ a {
   font-size: 24px;
 }
 
+
 a.item1:before,
-a:hover:before,
-a.item1:after {
+a:hover:before {
   content: '';
   --line-width: 50px;
   display: block;
@@ -247,9 +251,9 @@ h2 {
 }
 
 h2.active:before,
-h2:hover:before,
+h2.active:hover:before,
 h2.active:after,
-h2:hover:after {
+h2.active:hover:after {
   content: '';
   --line-width: 100px;
   display: block;
@@ -262,11 +266,11 @@ h2:hover:after {
   transform: scale(1);
 }
 
-h2:before {
+h2.active:before {
   transition: transform 400ms ease-out;
 }
 
-h2:hover:before {
+h2.active:hover:before {
   background-color: var(--secondary);
   transform: scale(3);
 }
@@ -309,6 +313,8 @@ svg {
 .homes.container {
   padding: 120px 4px;
 }
+
+/* смещение*/
 
 .homes_pic.container {
   padding: 0 4px;
@@ -400,6 +406,17 @@ figcaption {
   position: relative;
 }
 
+.button_destination_bkn {
+  display: none;
+}
+
+.dest_img1:hover,
+.button_destination_bkn {
+  display: block;
+}
+
+/*не работает ховер */
+
 .destination svg {
   font-size: 48px;
   fill: var(--base-white);
@@ -463,6 +480,89 @@ figcaption {
 
 /*разница в отступах между кнопкой*/
 
+.guests_reviews {
+  display: flex;
+  font-size: 18px;
+  line-height: 21px;
+
+}
+.rev_descr{
+  padding: 24px;
+}
+.spc_btw{
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+}
+.name_placer{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+.hotel_name{
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+.hotel_place {
+  color: var(--primary);
+}
+
+.rev_number {
+  font-size: 14px;
+  color: var(--base-text-color300);
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 32px;
+  background-color: var(--primary-dark);
+  font-family: 'OpenSans-Regular', sans serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--base-white);
+  border-radius: 8px;
+}
+
+.rev_item {
+  width: 400px;
+  background-color: var(--base-bg-color);
+  flex-direction: row;
+}
+
+.rev_mrgn {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.rev_acc_icon {
+  font-size: 53px;
+  margin-right: 22px;
+  padding-left: 5px;
+  /* fill: red; не закрашивается, только в цвет бэкграунда*/
+
+}
+.rev_name{
+  margin-bottom: 8px;
+}
+.rev_banner1 {
+  width: 82px;
+  height: 19px;
+}
+
+.rev_banner2 {
+  width: 57px;
+  height: 19px;
+}
+
+.rev_banner3 {
+  width: 95px;
+  height: 21px;
+}
 
 [class*="col"] {
   flex-grow: 1;
@@ -715,6 +815,199 @@ li {
   .col-xs-6 {
     width: 100%;
   }
+
+  .top {
+    min-height: 100vh;
+    background-color: rgba(18, 18, 18, 0.25);
+    background-image: url("../img/mob_castelmezzano.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-origin: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 52px;
+  }
+
+  .logo_trip_icon {
+    width: 122px;
+    height: 24px;
+    fill: var(--primary);
+  }
+
+  .night_icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .account_icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .mob_menu_icon {
+    width: 24px;
+    height: 16px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu_settings {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_item {
+    display: flex;
+    margin-right: 24px;
+  }
+
+  .set_item {
+    margin-left: 24px;
+  }
+
+  .top_section {
+    padding-top: 0;
+  }
+
+  a {
+    color: var(--base-white);
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  a:hover:before,
+  a.item1:after {
+    content: '';
+    --line-width: 50px;
+    display: block;
+    width: var(--line-width);
+    height: 4px;
+    background-color: var(--secondary);
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - (var(--line-width) / 2));
+    transform: scale(1);
+  }
+
+  a.item2:hover:before {
+    --line-width: 100px;
+  }
+
+  .item1 {
+    position: relative;
+  }
+
+  .item2 {
+    position: relative;
+  }
+
+  .dsc {
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .disc {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--base-white);
+  }
+
+  .check {
+    display: flex;
+    color: var(--base-white);
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+
+  .checked1 {
+    margin-left: 25px;
+    color: inherit;
+  }
+
+  .checked2 {
+    margin-left: 225px;
+    color: inherit;
+  }
+
+  .formblock {
+    display: inline-block;
+    width: 1232px;
+    height: 65px;
+    margin-bottom: 120px;
+  }
+
+  .form_sp {
+    background-color: var(--base-white);
+    border-radius: 8px;
+    height: 64px;
+  }
+
+  select {
+    font-size: 18px;
+    height: 64px;
+    appearance: none;
+    border-radius: 8px;
+    padding-top: 5px;
+  }
+
+  .f1 {
+    width: 463px;
+    padding-left: 28px;
+    border: none;
+  }
+
+  .f2 {
+    width: 260px;
+    border-color: var(--secondary);
+    border-width: 3px;
+    padding-left: 22px;
+  }
+
+  .f3 {
+    width: 306px;
+    padding-left: 26px;
+    border: none;
+  }
+
+  .blbutton {
+    border: none;
+    border-radius: 8px;
+    width: 195px;
+    height: 65px;
+    background-color: var(--primary);
+    color: var(--base-white);
+    font-size: 24px;
+    margin-right: -5px;
+  }
+
+
+  .download_icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .google_icon {
+    width: 135px;
+    height: 40px;
+  }
+
+  .apple_icon {
+    width: 120px;
+    height: 40px;
+    margin-left: 16px;
+  }
+
 
   .container {
     padding-top: 40px;
