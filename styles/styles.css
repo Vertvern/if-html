@@ -304,12 +304,6 @@ span.textblock {
   margin: 0 -8px;
 }
 
-.row-0 {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 0;
-}
-
 
 .offer svg {
   font-size: 95px;
@@ -331,8 +325,7 @@ span.textblock {
   position: relative;
 }
 
-/* смещение*/
-.homes .container {
+.homes .container.col-12.col-xs-6 {
   width: 100%;
   max-width: 1264px;
   padding: 120px 0;
@@ -353,6 +346,11 @@ span.textblock {
 
 .homes h2 {
   margin-bottom: 106px;
+}
+
+.homes_pic img {
+  width: 296px;
+  height: 296px;
 }
 
 div.descr {
@@ -378,6 +376,13 @@ a.item1:before, a:hover:before {
   bottom: 45.5%;
 }
 
+.container.col-xs-6 {
+  width: 100%;
+  max-width: 1264px;
+  padding: 120px 16px;
+  margin: 0 auto;
+}
+
 .destination h2 {
   margin-bottom: 105px;
 }
@@ -387,10 +392,14 @@ a.item1:before, a:hover:before {
   background-color: var(--base-stroke-main);
   border-radius: 8px;
   margin: 0 0 66px;
+
 }
 
+.dest_mob_place {
+  display: none;
+}
 
-.button {
+.button.col-xs-2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -400,11 +409,10 @@ a.item1:before, a:hover:before {
   color: var(--base-text-color100);
   border: none;
   border-radius: 8px;
-  background-color: var(--base-white);
   font-size: 24px;
 }
 
-.button._primary {
+.button._primary.col-xs-2 {
   color: var(--base-white);
   background-color: var(--primary);
 }
@@ -418,6 +426,8 @@ a.item1:before, a:hover:before {
 .button._sm._outline {
   justify-content: center;
   align-items: center;
+  border-radius: 8px;
+  background-color: var(--base-white);
 }
 
 .button._outline {
@@ -461,30 +471,6 @@ a.item1:before, a:hover:before {
 }
 */
 
-
-.region_0 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 192px;
-  height: 64px;
-  border-radius: 8px;
-  font-size: var(--base-font-size);
-}
-
-.region_0:active {
-  background-color: var(--primary);
-  color: var(--base-white);
-}
-
-.region_0:last-child {
-  width: 240px;
-}
-
-.destination_pic.container {
-  display: flex;
-  padding: 0 0 100px;
-}
 
 .placement_name {
   font-size: var(--base-font-size);
@@ -536,13 +522,17 @@ a.item1:before, a:hover:before {
 
 .sign_text {
   margin: 51px 0 21px;
-  border-width: 2px;
-  border-radius: 8px;
-  border: var(--primary);
 }
 
 .sign_up {
   position: relative;
+}
+
+.sign_install,
+.sign_title svg,
+.sign_logo,
+.mob_sign_text {
+  display: none;
 }
 
 .sign_svg {
@@ -929,11 +919,7 @@ a.item1:before, a:hover:before {
     margin: 0 8px;
   }
 
-  .footer,
-  .guest_rev,
-  .sign_up.row,
-  .destination,
-  .homes {
+  .footer {
     display: none;
   }
 
@@ -1208,6 +1194,422 @@ a.item1:before, a:hover:before {
     margin-bottom: 0;
   }
 
+
+  .homes {
+    min-width: 100%;
+    min-height: 354px;
+    background-color: var(--base-bg-color);
+    position: relative;
+  }
+
+  /* смещение*/
+  .homes .container {
+    width: 100%;
+    max-width: 360px;
+    padding: 40px 0;
+    margin: 0 auto;
+  }
+
+  .homes_pic.container {
+    padding: 0 8px;
+  }
+
+  .homes_pic img {
+    width: 156px;
+    height: 155px;
+  }
+
+  .homes_pic {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+
+  .pic_part3,
+  .pic_part4 {
+    display: none;
+  }
+
+  .homes .row {
+    margin: 0 0;
+  }
+
+
+  .homes h2 {
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  div.descr {
+    font-size: 12px;
+    color: var(--primary);
+    line-height: 14px;
+    margin: 5px 0 -15px;
+  }
+
+  div.hotel_placement {
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--base-text-color300);
+  }
+
+  a.item1:before, a:hover:before {
+    display: none; /* как отключить ссылку на ховер?*/
+  }
+
+  .homes_pic svg {
+    font-size: 28px;
+    fill: var(--base-white);
+    position: absolute;
+    left: 91%;
+    bottom: 45%;
+  }
+
+  .container.col-xs-6 {
+    padding: 40px 0;
+  }
+
+  .destination h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+
+  .tab {
+    display: inline-flex;
+    background-color: var(--base-white);
+    border-radius: 4px;
+    margin: 0 0 24px;
+  }
+
+  .dest_place {
+    display: none;
+  }
+
+  .dest_mob_place {
+    display: inline-block;
+  }
+
+  .button.col-xs-2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 98px;
+    height: 32px;
+    color: var(--base-text-color100);
+    border: 1px solid var(--base-stroke-main);
+    border-radius: 4px;
+    background-color: var(--base-white);
+    font-size: 19px;
+    line-height: 22px;
+    margin-right: 16px;
+    padding: 0 16px;
+  }
+
+  .button._primary.col-xs-2 {
+    width: 98px;
+    height: 32px;
+    color: var(--base-white);
+    background-color: var(--primary);
+    margin-left: 17px;
+  }
+
+  .button._sm {
+    font-size: 19px;
+    height: 32px;
+    min-width: 98px;
+  }
+
+  .button._sm._outline {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button._outline {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+
+  .destination img {
+    width: 156px;
+    height: 156px;
+  }
+
+  .destination_pic {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .dest_img3,
+  .dest_img4 {
+    display: none;
+  }
+
+  .destination__img-wrap {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .destination__img-wrap .button._sm._outline {
+    display: none;
+    position: absolute;
+  }
+
+  .destination__img-wrap:hover .button._sm._outline {
+    display: flex;
+  }
+
+  .destination__img-wrap:hover {
+    display: flex;
+  }
+
+  /*
+  .shadow_img:hover .destination__img-wrap {
+    background: rgba(56, 56, 56, 0.4);
+    box-shadow: inset 0 4px 70px rgba(56, 56, 56, 0.5);
+
+  }
+  .dest_img1{
+    background-image: url("../img/dest1.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-origin: border-box;
+    width: 295px;
+    height: 295px;
+  }
+  */
+  .placement_name {
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--primary);
+    margin-top: 8px;
+  }
+
+  .destination {
+    position: relative;
+  }
+
+  /*не работает ховер */
+  .destination svg {
+    font-size: 28px;
+    fill: var(--base-white);
+    position: absolute;
+    left: 91%;
+    top: 59%;
+    transform: rotate(270deg);
+  }
+
+
+  .guests_reviews {
+    display: flex;
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  .guest_rev {
+    display: none; /*off*/
+    position: relative;
+  }
+
+  .guest_rev h2 {
+    margin-bottom: 32px;
+  }
+
+  .container.guest_rev {
+    width: 100%;
+    max-width: 360px;
+    padding: 40px 0;
+    margin: 0 auto;
+  }
+
+  /* отступ от элемента изорбражения -4рх??? */
+  .rev_descr {
+    margin-top: -4px;
+    padding: 28px 24px 24px;
+    background-color: var(--base-bg-color);
+    height: 302px;
+    min-width: 328px;
+  }
+
+  .spc_btw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .name_placer {
+    display: flex;
+    margin-top: 19px;
+    margin-bottom: 4px;
+  }
+
+  .hotel_name {
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 15px;
+  }
+
+  .hotel_place {
+    color: var(--primary);
+  }
+
+  .rev_number {
+    font-size: 12px;
+    color: var(--base-text-color300);
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8px;
+    width: 48px;
+    height: 32px;
+    background-color: var(--primary-dark);
+    font-family: 'OpenSans-Regular', sans serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--base-white);
+    border-radius: 4px;
+  }
+
+  .country {
+    width: 1em;
+    height: 1em;
+    font-size: 17px;
+  }
+
+  .rev_acc_icon svg {
+    font-size: 44px;
+    margin-right: 22px;
+    margin-left: 5px;
+    fill: var(--base-text-color300);
+  }
+
+  .rev_name {
+    margin-bottom: 8px;
+  }
+
+  .rev_banner span {
+    font-size: 15px;
+    color: var(--base-text-color300);
+  }
+
+  .rev_img_block {
+    position: relative;
+  }
+
+  .shadow_price {
+    display: none;
+    width: 400px;
+    height: 48px;
+    background: rgba(56, 56, 56, 0.7);
+    box-shadow: inset 0 4px 70px rgba(56, 56, 56, 0.5);
+    position: absolute;
+    top: 355px;
+  }
+
+  .price {
+    font-size: 18px;
+    color: var(--base-white);
+    padding: 16px 11px 260px 24px;
+  }
+
+  .rev_img_block:hover .shadow_price {
+    display: flex;
+  }
+
+  .guest_rev .slide_button {
+    display: none;
+  }
+
+  .sign_up .container {
+    padding: 24px 0;
+    margin: 0 auto;
+    max-width: 360px;
+    max-height: 106px;
+    display: flex;
+    background-color: var(--base-white);
+    font-size: var(--base-font-size);
+    font-weight: 500;
+  }
+
+  .sign_up.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0;
+  }
+
+  .sign_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .cont a svg,
+  .sign_text {
+    display: none;
+  }
+
+  .sign_up_button {
+    display: none;
+  }
+
+  .mob_sign_text {
+    display: flex;
+    font-size: 12px;
+    line-height: 14px;
+    min-width: 124px;
+    margin-right: 5%;
+  }
+
+  .sign_install {
+    display: flex;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+    margin-right: -6%;
+
+  }
+
+  .sign_logo {
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    width: 58px;
+    height: 58px;
+    background-color: var(--primary);
+    left: 13%;
+  }
+
+  .sign_title svg {
+    top: 2%;
+    display: flex;
+    position: relative;
+    width: 54px;
+    height: 11px;
+    fill: var(--base-white);
+    right: 5%;
+  }
+
+  .sign_up {
+    position: relative;
+  }
+
+  .sign_svg {
+    position: absolute;
+    left: 5%;
+    bottom: 37%;
+    font-size: 16px;
+  }
+
+  /**/
   .mob_footer {
     display: flex;
     flex-wrap: wrap;
@@ -1239,8 +1641,9 @@ a.item1:before, a:hover:before {
     font-weight: 500;
     font-size: 15px;
     text-decoration: underline;
-    margin-bottom: 10px;
-    margin-top: 24px;
+    margin-bottom: 35px;
+    margin-top: 40px;
+
   }
 
   .mob_f_href {
