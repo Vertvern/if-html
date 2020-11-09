@@ -935,6 +935,7 @@ a.item1:before, a:hover:before {
     background-origin: border-box;
     flex-direction: column;
     justify-content: space-between;
+    min-width: fit-content;
   }
 
   .container.header.col-xs-6 {
