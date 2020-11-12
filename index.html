@@ -303,16 +303,38 @@
               <option>New York</option>
             </optgroup>
           </select>
-          <select class="f2">
-            <optgroup label="Calendar">
-              <option>Tue 15 Sept &mdash; Sat 19 Sept</option>
-            </optgroup>
-          </select>
-          <select class="f3">
-            <optgroup label="Number">
-              <option>2 Adults &mdash; 0 Children &mdash; 1 Room</option>
-            </optgroup>
-          </select>
+          <div class="border_f2">
+            <select class="f2_1">
+              <optgroup label="Calendar">
+                <option>Tue 15 Sept</option>
+              </optgroup>
+            </select>
+            <div class="line_item_1">&mdash;</div>
+            <select class="f2_2">
+              <optgroup label="Calendar">
+                <option>Sat 19 Sept</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="f3">
+            <select class="f3_1">
+              <optgroup label="Number">
+                <option>2 Adults</option>
+              </optgroup>
+            </select>
+            <div class="line_item_2">&mdash;</div>
+            <select class="f3_2">
+              <optgroup label="Number">
+                <option>0 Children</option>
+              </optgroup>
+            </select>
+            <div class="line_item_3">&mdash;</div>
+            <select class="f3_3">
+              <optgroup label="Number">
+                <option>1 Room</option>
+              </optgroup>
+            </select>
+          </div>
           <span><input class="blbutton" type="button" value="Search"></span>
         </div>
       </form>
@@ -474,15 +496,14 @@
     <h2 class="tcenter ">The best destinations</h2>
     <div class="tab row">
       <a href="#" class="button _primary col-xs-2">Regions</a>
-      <a href="#" class="button col-xs-2">Cities</a>
-      <a href="#" class="button col-xs-2"><span class="dest_place">Places of interest</span><span
+      <a href="#" class="button _primary col-xs-2">Cities</a>
+      <a href="#" class="button _primary  col-xs-2"><span class="dest_place">Places of interest</span><span
         class="dest_mob_place">Places</span></a>
     </div>
     <div class="row destination_pic">
-      <div class="dest_img1 col-3 col-xs-3">
+      <div class=" col-3 col-xs-3">
         <figure>
-          <div class="destination__img-wrap">
-            <img src="./img/dest1.jpg" alt="Maldives">
+          <div class="destination__img-wrap dest_img1">
             <button class="button _sm  _outline">Book now</button>
           </div>
           <figcaption>
@@ -490,10 +511,9 @@
           </figcaption>
         </figure>
       </div>
-      <div class="dest_img2 col-3 col-xs-3">
-        <figure class="dest_img2">
-          <div class="destination__img-wrap">
-            <img src="./img/dest2.jpg" alt="Spain">
+      <div class="col-3 col-xs-3">
+        <figure>
+          <div class="destination__img-wrap dest_img2">
             <button class="button _sm  _outline">Book now</button>
           </div>
           <figcaption>
@@ -506,9 +526,9 @@
           </svg>
         </a>
       </div>
-      <div class="dest_img3 col-3 col-xs-3">
-        <figure class="dest_img3">
-          <div class="destination__img-wrap">
+      <div class="dest_img_3 col-3 col-xs-3">
+        <figure>
+          <div class="destination__img-wrap dest_img3">
             <img src="./img/dest3.jpg" alt="Norway">
             <button class="button _sm  _outline">Book now</button>
           </div>
@@ -517,10 +537,9 @@
           </figcaption>
         </figure>
       </div>
-      <div class="dest_img4 col-3 col-xs-3">
-        <figure class="dest_img4">
-          <div class="destination__img-wrap">
-            <img src="./img/dest4.jpg" alt="Island">
+      <div class=" dest_img_4 col-3 col-xs-3">
+        <figure>
+          <div class="destination__img-wrap dest_img4">
             <button class="button _sm  _outline">Book now</button>
           </div>
           <figcaption>

@@ -125,7 +125,7 @@ a {
 
 
 a.item1:before,
-a:hover:before {
+a:hover.item2:before {
   content: '';
   --line-width: 50px;
   display: block;
@@ -187,20 +187,22 @@ a.item2:hover:before {
 
 .formblock {
   display: inline-block;
-  max-width: 1232px;
+
   height: 65px;
   margin-bottom: 120px;
 }
 
 .form_sp {
+  min-width: 1232px;
   background-color: var(--base-white);
   border-radius: 8px;
-  height: 64px;
+  height: 65px;
+  position: relative;
 }
 
 select {
   font-size: 18px;
-  height: 64px;
+  height: 60px;
   appearance: none;
   border-radius: 8px;
   padding-top: 5px;
@@ -212,28 +214,69 @@ select {
   border: none;
 }
 
-.f2 {
-  width: 260px;
-  border-color: var(--secondary);
-  border-width: 3px;
-  padding-left: 22px;
+.f2_1 {
+  border: none;
+  margin-right: -20px;
 }
 
-.f3 {
-  width: 306px;
-  padding-left: 26px;
+.f2_2 {
   border: none;
 }
 
+.border_f2 {
+  padding: 0 24px;
+  display: inline-flex;
+  border-radius: 8px;
+  border: 3px solid var(--secondary);
+  height: 66px;
+  width: 260px;
+  position: relative;
+}
+
+/*.border_f2 span {*/
+/*  position: absolute;*/
+/*  left: 48%;*/
+/*  bottom: 26%;*/
+/*  font-size: 17px;*/
+/*}*/
+.border_f2 .line_item_1{
+  font-size: 18px;
+  padding: 22px 5px;
+}
+.f3{
+  display: inline-flex;
+}
+.f3_1, .f3_2, .f3_3{
+  border: none;
+  padding-left: 25px;
+}
+.f3_2, .f3_3{
+  padding-left: 5px;
+}
+
+.f3 .line_item_2{
+  font-size: 18px;
+  padding: 22px 0;
+  position: absolute;
+  left: 67%;
+}
+.f3 .line_item_3{
+  font-size: 18px;
+  padding: 22px 5px;
+  position: absolute;
+  left: 75%;
+}
 .blbutton {
   border: none;
   border-radius: 8px;
-  width: 195px;
+  width: 192px;
   height: 65px;
   background-color: var(--primary);
   color: var(--base-white);
-  font-size: 24px;
+  font-size: var(--base-font-size);
   margin-right: -5px;
+  position: absolute;
+  left:  84.5%;;
 }
 
 
@@ -315,9 +358,6 @@ span.textblock {
   padding-bottom: 0;
 }
 
-/*не  получилось сменить цвет, пока не удалил заливку из данных спрайта*/
-
-
 .homes {
   min-width: 100%;
   min-height: 100vh;
@@ -364,15 +404,12 @@ div.hotel_placement {
   color: var(--base-text-color300);
 }
 
-a.item1:before, a:hover:before {
-  display: none; /* как отключить ссылку на ховер?*/
-}
 
 .homes_pic svg {
   font-size: 48px;
   fill: var(--base-white);
   position: absolute;
-  left: 87%;
+  left: 91%;
   bottom: 45.5%;
 }
 
@@ -412,7 +449,7 @@ a.item1:before, a:hover:before {
   font-size: 24px;
 }
 
-.button._primary.col-xs-2 {
+.button._primary.col-xs-2:hover {
   color: var(--base-white);
   background-color: var(--primary);
 }
@@ -437,7 +474,6 @@ a.item1:before, a:hover:before {
 
 .destination__img-wrap {
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
 }
@@ -453,15 +489,12 @@ a.item1:before, a:hover:before {
 
 .destination__img-wrap:hover {
   display: flex;
-}
-
-/*
-.shadow_img:hover .destination__img-wrap {
-  background: rgba(56, 56, 56, 0.4);
+  background-color: rgba(56, 56, 56, 0.4);
   box-shadow: inset 0 4px 70px rgba(56, 56, 56, 0.5);
-
 }
-.dest_img1{
+
+
+.dest_img1 {
   background-image: url("../img/dest1.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -469,7 +502,33 @@ a.item1:before, a:hover:before {
   width: 295px;
   height: 295px;
 }
-*/
+
+.dest_img2 {
+  background-image: url("../img/dest2.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-origin: border-box;
+  width: 295px;
+  height: 295px;
+}
+
+.dest_img3 {
+  background-image: url("../img/dest3.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-origin: border-box;
+  width: 295px;
+  height: 295px;
+}
+
+.dest_img4 {
+  background-image: url("../img/dest4.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-origin: border-box;
+  width: 295px;
+  height: 295px;
+}
 
 
 .placement_name {
@@ -537,7 +596,7 @@ a.item1:before, a:hover:before {
 
 .sign_svg {
   position: absolute;
-  left: 85.5%;
+  left: 89%;
   bottom: 71%;;
   font-size: 26px;
 }
@@ -1309,12 +1368,11 @@ a.item1:before, a:hover:before {
     padding: 0 16px;
   }
 
-  .button._primary.col-xs-2 {
+  .button._primary.col-xs-2:hover {
     width: 98px;
     height: 32px;
     color: var(--base-white);
     background-color: var(--primary);
-    margin-left: 17px;
   }
 
   .button._sm {
@@ -1333,19 +1391,9 @@ a.item1:before, a:hover:before {
     border: 1px solid var(--primary);
   }
 
-  .destination img {
-    width: 156px;
-    height: 156px;
-  }
-
   .destination_pic {
     display: flex;
     flex-wrap: nowrap;
-  }
-
-  .dest_img3,
-  .dest_img4 {
-    display: none;
   }
 
   .destination__img-wrap {
@@ -1355,6 +1403,47 @@ a.item1:before, a:hover:before {
     align-items: center;
   }
 
+  .dest_img1 {
+    background-image: url("../img/dest1.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-origin: border-box;
+    width: 156px;
+    height: 156px;
+  }
+
+  .dest_img2 {
+    background-image: url("../img/dest2.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-origin: border-box;
+    width: 156px;
+    height: 156px;
+  }
+
+  .dest_img3 {
+    background-image: url("../img/dest3.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-origin: border-box;
+    width: 156px;
+    height: 156px;
+  }
+
+  .dest_img4 {
+    background-image: url("../img/dest4.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-origin: border-box;
+    width: 156px;
+    height: 156px;
+  }
+
+  .dest_img_3,
+  .dest_img_4 {
+    display: none;
+  }
+
   .destination__img-wrap .button._sm._outline {
     display: none;
     position: absolute;
@@ -1362,27 +1451,20 @@ a.item1:before, a:hover:before {
 
   .destination__img-wrap:hover .button._sm._outline {
     display: flex;
+
   }
 
   .destination__img-wrap:hover {
     display: flex;
   }
 
-  /*
-  .shadow_img:hover .destination__img-wrap {
-    background: rgba(56, 56, 56, 0.4);
-    box-shadow: inset 0 4px 70px rgba(56, 56, 56, 0.5);
 
+  .destination__img-wrap:hover {
+    display: flex;
+    background-color: rgba(56, 56, 56, 0.4);
+    box-shadow: inset 0 4px 70px rgba(56, 56, 56, 0.5);
   }
-  .dest_img1{
-    background-image: url("../img/dest1.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-origin: border-box;
-    width: 295px;
-    height: 295px;
-  }
-  */
+
   .placement_name {
     font-size: 12px;
     line-height: 14px;
